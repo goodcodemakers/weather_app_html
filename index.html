@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>날씨 앱</title>
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://goodcodemakers.github.io/weather_app2022-12/"
+    />
+    <meta property="og:title" content="WeatherOrtimePage" />
+    <meta property="og:image" content="https://i.ibb.co/RyssKcV/image.png" />
+    <meta property="og:description" content="WeatherOrtimePage입니다." />
+    <meta property="og:site_name" content="WeatherOrtimePage" />
+    <meta property="og:locale" content="Kor" />
+    <meta name="keywords" content="WeatherApp, Weather, time" />
+    <meta name="author" content="최정호" />
+    <meta name="description" content="WeatherOrtimePage입니다." />
+    <link rel="icon" href="./imges/timefavicon.png" />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="box">
+        <h1>국가별 날씨</h1>
+        <ul>
+          <li class="cityname">국가별</li>
+
+          <li class="temp"></li>
+          <li class="desc">description</li>
+        </ul>
+        <select name="select" id="select">
+          <option value="seoul">서울</option>
+          <option value="Boston" class="Boston">보스턴</option>
+          <option value="Barcelona" class="Barcelona">바르셀로나</option>
+          <option value="Berlin" class="Berlin">베를린</option>
+          <option value="Moscow" class="Moscow">모스크바</option>
+          <option value="Algiers" class="Algiers">(알제리수도)알제</option>
+          <option value="Sydney" class="Sydney">시드니</option>
+          <option value="Reykjavik" class="Reykjavik">레이캬비크</option>
+        </select>
+      </div>
+    </div>
+    <div class="container">
+      <div class="clock" id="clock">
+        <img src="./imges/time.svg" alt="time" />
+        <div>
+          <img src="./imges/Hline.svg" alt="hLine" class="hLine" />
+        </div>
+        <div>
+          <img src="./imges/Mline.svg" alt="Mline" class="mLine" />
+        </div>
+        <div>
+          <img src="./imges/Sline.svg" alt="sline" class="sLine" />
+        </div>
+      </div>
+    </div>
+
+    <script src="src/app.js"></script>
+  </body>
+</html>

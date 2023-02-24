@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#app {
+  flex: 1;
+  height: 100%;
+  /* position: relative; */
+
+  background-image: url(../imges/Clear.jpg);
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  box-shadow: 5px 5px 5px 5px gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.box {
+  border: 1px solid #fff;
+  background: linear-gradient(45deg, rgba(224, 51, 51, 0.8), aquamarine);
+  border-radius: 30px;
+  margin: 0 auto;
+  width: 300px;
+}
+
+#app h1 {
+  margin-bottom: 1em;
+  /* height: 100%; */
+  width: 100%;
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.5);
+  text-shadow: 0px 3px 5px gray;
+}
+
+.cityname {
+  width: 100%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 0.5);
+  /* opacity: 0.5; */
+  margin-bottom: 50px;
+  text-shadow: 0px 3px 5px gray;
+}
+
+.temp {
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-shadow: 0px 3px 5px gray;
+}
+
+.desc {
+  font-size: 2rem;
+  text-shadow: 0px 3px 5px gray;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+select {
+  padding: 5px 1rem;
+  margin-top: 1rem;
+  border-style: none;
+  border-radius: 15px;
+  font-size: 30px;
+  text-align: center;
+  color: gray;
+  background: linear-gradient(80deg, rgba(224, 51, 51, 0.5), aquamarine);
+}
+.container {
+  flex: 1;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  background-image: url(../imges/seoul.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 5px 5px 5px 5px gray;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: 1px solid #fff;
+}
+.clock {
+  /* display: flex; */
+  width: 100%;
+
+  /* background-image: url(../imges/time.svg); */
+  /* background-position: center; */
+  /* background-size: cover; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.clock > img {
+  width: 100%;
+}
+.clock .hLine {
+  position: absolute;
+  width: 3%;
+  transform: rotate(0deg);
+  bottom: 50%;
+  left: calc(50% - 12px);
+  transform-origin: bottom;
+}
+.clock .mLine {
+  position: absolute;
+  bottom: 50%;
+  left: calc(50% - 12px);
+  transform-origin: bottom;
+  transform: rotate(0deg);
+  width: 3%;
+}
+.clock .sLine {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  height: 30%;
+  transform-origin: bottom;
+  transform: rotate(0deg);
+}
+@media (max-width: 1400px) {
+  body {
+    flex-direction: column;
+    height: 1600px;
+  }
+  #app,
+  .container {
+    width: 100%;
+    height: 800px;
+  }
+}

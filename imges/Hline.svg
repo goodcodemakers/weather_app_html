@@ -1,0 +1,7 @@
+<svg width="24" height="200" viewBox="0 0 24 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line y1="-1.25" x2="190" y2="-1.25" transform="matrix(0 1 1 0 4.99988 10)" stroke="white" stroke-width="2.5"/>
+<line y1="-1.25" x2="190" y2="-1.25" transform="matrix(0 1 1 0 21.9999 10)" stroke="white" stroke-width="2.5"/>
+<path d="M2.5 10H22L12.933 0L2.5 10Z" fill="white"/>
+<rect width="20" height="15" transform="matrix(0 1 1 0 4.99988 10)" fill="white"/>
+<path d="M19 14.2642L4.45455 14.2642V17.3395H10.456V23.5824H4.45455V26.6506H19V23.5824H12.9915V17.3395H19V14.2642Z" fill="#FFF500"/>
+</svg>
